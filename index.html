@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LICO ショート動画塾 | AI × TikTok動画編集を6ヶ月で習得</title>
+  <meta name="description" content="AIを活用したTikTok向けショート動画の編集スキルを、6ヶ月で基礎から実践まで習得。LICO ショート動画塾の公式サービスサイトです。" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #4338CA;
+      --primary-light: #6366F1;
+      --secondary: #7C3AED;
+      --accent: #06B6D4;
+      --dark-bg: #1E1B4B;
+      --dark-text: #1E293B;
+      --med-text: #475569;
+      --light-text: #94A3B8;
+    }
+    * { font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif; }
+    html { scroll-behavior: smooth; }
+    .gradient-btn {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      transition: all 0.3s ease;
+    }
+    .gradient-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(67, 56, 202, 0.4);
+    }
+    .section-alt { background: #F8FAFC; }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; }
+    .faq-answer.open { max-height: 500px; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .hero-bg {
+      background: linear-gradient(135deg, #1E1B4B 0%, #312E81 40%, #3730A3 100%);
+    }
+    .accent-line { width: 60px; height: 4px; background: var(--accent); }
+    .phase-badge { font-size: 0.65rem; letter-spacing: 0.05em; }
+    @media (max-width: 768px) {
+      .hero-title { font-size: 1.75rem !important; }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- ============================================================ -->
+<!-- HEADER -->
+<!-- ============================================================ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-95 backdrop-filter shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2">
+      <span class="text-xl font-black" style="color: var(--primary);">LICO</span>
+      <span class="text-sm font-bold text-gray-600 hidden sm:inline">ショート動画塾</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm text-gray-600">
+      <a href="#features" class="hover:text-indigo-700 transition">特徴</a>
+      <a href="#curriculum" class="hover:text-indigo-700 transition">カリキュラム</a>
+      <a href="#pricing" class="hover:text-indigo-700 transition">料金</a>
+      <a href="#faq" class="hover:text-indigo-700 transition">FAQ</a>
+    </nav>
+    <a href="#cta" class="gradient-btn text-white text-sm font-bold px-5 py-2 rounded-full">
+      無料相談
+    </a>
+  </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- HERO -->
+<!-- ============================================================ -->
+<section class="hero-bg pt-32 pb-20 md:pt-40 md:pb-28 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="accent-line mx-auto mb-6"></div>
+    <h1 class="hero-title text-3xl md:text-5xl font-black text-white leading-tight mb-6">
+      AIを活用したショート動画編集スキルを、<br class="hidden md:block" />
+      <span style="color: var(--accent);">6ヶ月</span>で基礎から実践まで。
+    </h1>
+    <p class="text-gray-300 text-base md:text-lg mb-10 leading-relaxed">
+      未経験からTikTok向けショート動画の編集スキルを習得。<br class="hidden md:block" />
+      動画講義・無制限添削・コミュニティで、あなたの学びを支えます。
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#cta" class="gradient-btn text-white font-bold px-10 py-4 rounded-full text-lg">
+        無料相談はこちら
+      </a>
+      <a href="#overview" class="border-2 border-white border-opacity-30 text-white font-bold px-10 py-4 rounded-full text-lg hover:bg-white hover:bg-opacity-10 transition">
+        サービス詳細を見る
+      </a>
+    </div>
+    <div class="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+      <span>✔ オンライン完結</span>
+      <span>✔ 未経験OK</span>
+      <span>✔ 無制限添削</span>
+      <span>✔ 6ヶ月カリキュラム</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PROBLEMS -->
+<!-- ============================================================ -->
+<section class="py-20 px-4 section-alt fade-in">
+  <div class="max-w-5xl mx-auto text-center">
+    <p class="text-indigo-600 font-bold text-sm mb-2">PROBLEMS</p>
+    <h2 class="text-2xl md:text-3xl font-black mb-12">こんなお悩みありませんか？</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow-md text-left card-hover">
+        <div class="text-3xl mb-3">🎬</div>
+        <h3 class="font-bold text-lg mb-2">動画編集に興味があるけど、何から始めれば…</h3>
+        <p class="text-gray-500 text-sm">ツールが多すぎて選べない。独学では限界を感じている方へ。</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md text-left card-hover">
+        <div class="text-3xl mb-3">🤖</div>
+        <h3 class="font-bold text-lg mb-2">AIを使って副業したいけど、具体的な方法がわからない</h3>
+        <p class="text-gray-500 text-sm">AIツールの活用法を体系的に学べる環境が必要です。</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md text-left card-hover">
+        <div class="text-3xl mb-3">📱</div>
+        <h3 class="font-bold text-lg mb-2">TikTokで動画を作りたいけど、スキルがない</h3>
+        <p class="text-gray-500 text-sm">未経験でも6ヶ月で実践レベルまで到達できるカリキュラムを用意。</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-md text-left card-hover">
+        <div class="text-3xl mb-3">🏠</div>
+        <h3 class="font-bold text-lg mb-2">在宅で新しいスキルを身につけたい</h3>
+        <p class="text-gray-500 text-sm">完全オンラインで、自分のペースで学習を進められます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FEATURES (3 PILLARS) -->
+<!-- ============================================================ -->
+<section id="features" class="py-20 px-4 fade-in">
+  <div class="max-w-5xl mx-auto text-center">
+    <p class="text-indigo-600 font-bold text-sm mb-2">FEATURES</p>
+    <h2 class="text-2xl md:text-3xl font-black mb-4">LICOが選ばれる3つの理由</h2>
+    <p class="text-gray-500 mb-12">「学ぶ」だけで終わらない。「使える」に変わる。</p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Pillar 1 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+        <div class="h-2" style="background: var(--primary);"></div>
+        <div class="p-8">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-black mx-auto mb-4" style="background: var(--primary);">1</div>
+          <h3 class="text-xl font-black mb-2">学ぶ</h3>
+          <p class="text-xs text-gray-400 mb-4">Education</p>
+          <p class="text-gray-600 text-sm leading-relaxed">動画講義と課題を通じて、AIツールを使ったショート動画編集の基礎を6ヶ月かけて段階的に学びます。</p>
+        </div>
+      </div>
+      <!-- Pillar 2 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+        <div class="h-2" style="background: var(--secondary);"></div>
+        <div class="p-8">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-black mx-auto mb-4" style="background: var(--secondary);">2</div>
+          <h3 class="text-xl font-black mb-2">実践する</h3>
+          <p class="text-xs text-gray-400 mb-4">Practice</p>
+          <p class="text-gray-600 text-sm leading-relaxed">学んだスキルで実際のショート動画制作に取り組む機会を提供。課題提出と無制限添削で制作スキルを磨きます。</p>
+        </div>
+      </div>
+      <!-- Pillar 3 -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+        <div class="h-2" style="background: var(--accent);"></div>
+        <div class="p-8">
+          <div class="w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-black mx-auto mb-4" style="background: var(--accent);">3</div>
+          <h3 class="text-xl font-black mb-2">続ける</h3>
+          <p class="text-xs text-gray-400 mb-4">Community</p>
+          <p class="text-gray-600 text-sm leading-relaxed">6ヶ月終了後も月額1,000円（税抜）のコミュニティで学習継続・情報交換・仲間とのつながりを維持できます。</p>
+        </div>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-8">※ 実践機会は所定の条件に基づき案内されるものであり、案件や収益を保証するものではありません。</p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SERVICE OVERVIEW -->
+<!-- ============================================================ -->
+<section id="overview" class="py-20 px-4 section-alt fade-in">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-indigo-600 font-bold text-sm mb-2">SERVICE</p>
+      <h2 class="text-2xl md:text-3xl font-black">サービス概要</h2>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+      <table class="w-full text-sm">
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50 w-1/3 md:w-1/4">サービス名</td>
+            <td class="px-6 py-4">LICO ショート動画塾</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">提供形式</td>
+            <td class="px-6 py-4">オンライン完結（動画講義＋課題＋添削＋LINE＋コミュニティ）</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">学習テーマ</td>
+            <td class="px-6 py-4">AIを活用したTikTok向けショート動画編集</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">契約期間</td>
+            <td class="px-6 py-4">6ヶ月</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">料金</td>
+            <td class="px-6 py-4 font-bold" style="color: var(--primary);">150,000円（税抜）</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">初期費用</td>
+            <td class="px-6 py-4">なし</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">支払い方法</td>
+            <td class="px-6 py-4">クレジットカード ／ 銀行振込</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">添削</td>
+            <td class="px-6 py-4">無制限</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">質問対応</td>
+            <td class="px-6 py-4">LINEチャット</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">6ヶ月終了後</td>
+            <td class="px-6 py-4">月額1,000円（税抜）で継続コミュニティに参加可能</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg text-sm text-yellow-800">
+      ※ 本サービスは教育サービスであり、収益や案件の保証を行うものではありません。料金はすべて税抜です。
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CURRICULUM -->
+<!-- ============================================================ -->
+<section id="curriculum" class="py-20 px-4 fade-in">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-indigo-600 font-bold text-sm mb-2">CURRICULUM</p>
+      <h2 class="text-2xl md:text-3xl font-black mb-4">6ヶ月カリキュラム</h2>
+      <p class="text-gray-500">基礎 → 応用 → 実践の3フェーズで段階的にスキルアップ</p>
+    </div>
+
+    <!-- Phase Labels -->
+    <div class="flex flex-wrap gap-3 justify-center mb-8">
+      <span class="phase-badge px-4 py-1 rounded-full text-white font-bold" style="background: var(--primary);">基礎期 Month 1〜2</span>
+      <span class="text-gray-300">→</span>
+      <span class="phase-badge px-4 py-1 rounded-full text-white font-bold" style="background: var(--secondary);">応用期 Month 3〜4</span>
+      <span class="text-gray-300">→</span>
+      <span class="phase-badge px-4 py-1 rounded-full text-white font-bold" style="background: var(--accent);">実践期 Month 5〜6</span>
+    </div>
+
+    <!-- Month Cards -->
+    <div class="space-y-4">
+      <!-- Month 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-32 flex-shrink-0 flex items-center justify-center py-3 md:py-0 text-white font-bold" style="background: var(--primary);">
+            <div class="text-center"><div class="text-xs">Month</div><div class="text-2xl">1</div></div>
+          </div>
+          <div class="p-5 flex-1">
+            <h3 class="font-bold text-lg mb-2">AI動画編集の第一歩</h3>
+            <p class="text-gray-500 text-sm mb-3">ショート動画とは何か／AIツールの紹介と基本操作／素材の準備方法</p>
+            <div class="flex flex-col sm:flex-row gap-3 text-sm">
+              <div class="flex-1 bg-indigo-50 rounded-lg p-3">
+                <span class="font-bold text-indigo-700">課題：</span>AIツールで15〜30秒のショート動画を1本制作
+              </div>
+              <div class="flex-1 bg-purple-50 rounded-lg p-3">
+                <span class="font-bold text-purple-700">到達目標：</span>AIツールの基本操作を理解し、1本の動画を完成
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Month 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-32 flex-shrink-0 flex items-center justify-center py-3 md:py-0 text-white font-bold" style="background: var(--primary);">
+            <div class="text-center"><div class="text-xs">Month</div><div class="text-2xl">2</div></div>
+          </div>
+          <div class="p-5 flex-1">
+            <h3 class="font-bold text-lg mb-2">ショート動画の構成理解</h3>
+            <p class="text-gray-500 text-sm mb-3">冒頭のフック設計／展開パターン／導線設計／視聴維持率の考え方</p>
+            <div class="flex flex-col sm:flex-row gap-3 text-sm">
+              <div class="flex-1 bg-indigo-50 rounded-lg p-3">
+                <span class="font-bold text-indigo-700">課題：</span>「冒頭3秒で興味を引く」構成の動画を1本制作
+              </div>
+              <div class="flex-1 bg-purple-50 rounded-lg p-3">
+                <span class="font-bold text-purple-700">到達目標：</span>視聴者の離脱を減らす構成の基本を実践できる
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Month 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-32 flex-shrink-0 flex items-center justify-center py-3 md:py-0 text-white font-bold" style="background: var(--secondary);">
+            <div class="text-center"><div class="text-xs">Month</div><div class="text-2xl">3</div></div>
+          </div>
+          <div class="p-5 flex-1">
+            <h3 class="font-bold text-lg mb-2">テロップ・カット・BGM</h3>
+            <p class="text-gray-500 text-sm mb-3">テロップ・フォント選び／カット技術／BGM・テンポ設計</p>
+            <div class="flex flex-col sm:flex-row gap-3 text-sm">
+              <div class="flex-1 bg-indigo-50 rounded-lg p-3">
+                <span class="font-bold text-indigo-700">課題：</span>指定テーマで各要素を組み合わせた動画を制作
+              </div>
+              <div class="flex-1 bg-purple-50 rounded-lg p-3">
+                <span class="font-bold text-purple-700">到達目標：</span>編集の各要素を意図を持って使い分けられる
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Month 4 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-32 flex-shrink-0 flex items-center justify-center py-3 md:py-0 text-white font-bold" style="background: var(--secondary);">
+            <div class="text-center"><div class="text-xs">Month</div><div class="text-2xl">4</div></div>
+          </div>
+          <div class="p-5 flex-1">
+            <h3 class="font-bold text-lg mb-2">AI活用の効率的編集フロー</h3>
+            <p class="text-gray-500 text-sm mb-3">AI文字起こし／AI編集アシスタント／効率的な編集ワークフロー</p>
+            <div class="flex flex-col sm:flex-row gap-3 text-sm">
+              <div class="flex-1 bg-indigo-50 rounded-lg p-3">
+                <span class="font-bold text-indigo-700">課題：</span>「手動のみ」と「AI活用」で編集し効率差をレポート
+              </div>
+              <div class="flex-1 bg-purple-50 rounded-lg p-3">
+                <span class="font-bold text-purple-700">到達目標：</span>AIで編集時間を短縮する自分なりのワークフローを確立
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Month 5 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-32 flex-shrink-0 flex items-center justify-center py-3 md:py-0 text-white font-bold" style="background: var(--accent);">
+            <div class="text-center"><div class="text-xs">Month</div><div class="text-2xl">5</div></div>
+          </div>
+          <div class="p-5 flex-1">
+            <h3 class="font-bold text-lg mb-2">販売導線を意識した動画作成</h3>
+            <p class="text-gray-500 text-sm mb-3">動画での興味喚起設計／CTA（行動喚起）／TikTokの特性を活かした投稿戦略</p>
+            <div class="flex flex-col sm:flex-row gap-3 text-sm">
+              <div class="flex-1 bg-indigo-50 rounded-lg p-3">
+                <span class="font-bold text-indigo-700">課題：</span>「商材への興味を喚起する」ショート動画を企画書付きで制作
+              </div>
+              <div class="flex-1 bg-purple-50 rounded-lg p-3">
+                <span class="font-bold text-purple-700">到達目標：</span>視聴者に行動を促す動画を設計・制作できる
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Month 6 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-32 flex-shrink-0 flex items-center justify-center py-3 md:py-0 text-white font-bold" style="background: var(--accent);">
+            <div class="text-center"><div class="text-xs">Month</div><div class="text-2xl">6</div></div>
+          </div>
+          <div class="p-5 flex-1">
+            <h3 class="font-bold text-lg mb-2">総合制作と実践準備</h3>
+            <p class="text-gray-500 text-sm mb-3">ポートフォリオ制作／実践の進め方ガイダンス／6ヶ月の振り返り</p>
+            <div class="flex flex-col sm:flex-row gap-3 text-sm">
+              <div class="flex-1 bg-indigo-50 rounded-lg p-3">
+                <span class="font-bold text-indigo-700">課題：</span>30〜60秒のショート動画を3本制作しポートフォリオとする
+              </div>
+              <div class="flex-1 bg-purple-50 rounded-lg p-3">
+                <span class="font-bold text-purple-700">到達目標：</span>企画から完成まで一人で制作でき、実践に臨める
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mt-6 text-center">※ カリキュラムは改善のため変更される場合があります。学習ペースには個人差があります（目安：1日30分〜1時間）。</p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SUPPORT -->
+<!-- ============================================================ -->
+<section class="py-20 px-4 section-alt fade-in">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-indigo-600 font-bold text-sm mb-2">SUPPORT</p>
+      <h2 class="text-2xl md:text-3xl font-black">サポート体制</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Included -->
+      <div>
+        <h3 class="text-lg font-bold text-green-700 mb-4 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">✓</span>
+          含まれるサポート
+        </h3>
+        <div class="space-y-3">
+          <div class="bg-white rounded-lg p-4 shadow-sm flex items-start gap-3">
+            <span class="text-green-500 mt-0.5">✔</span>
+            <div><p class="font-bold text-sm">学習コンテンツ</p><p class="text-gray-500 text-xs">動画講義形式。体系的な教材</p></div>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-sm flex items-start gap-3">
+            <span class="text-green-500 mt-0.5">✔</span>
+            <div><p class="font-bold text-sm">課題提出・無制限添削</p><p class="text-gray-500 text-xs">月ごとの課題。回数制限なしのフィードバック</p></div>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-sm flex items-start gap-3">
+            <span class="text-green-500 mt-0.5">✔</span>
+            <div><p class="font-bold text-sm">LINEチャット質問</p><p class="text-gray-500 text-xs">学習中の疑問をLINEで質問可能</p></div>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-sm flex items-start gap-3">
+            <span class="text-green-500 mt-0.5">✔</span>
+            <div><p class="font-bold text-sm">コミュニティ参加</p><p class="text-gray-500 text-xs">受講者同士の情報交換・交流</p></div>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-sm flex items-start gap-3">
+            <span class="text-green-500 mt-0.5">✔</span>
+            <div><p class="font-bold text-sm">実践機会の案内</p><p class="text-gray-500 text-xs">所定条件を満たした場合にご案内</p></div>
+          </div>
+        </div>
+      </div>
+      <!-- Not Included -->
+      <div>
+        <h3 class="text-lg font-bold text-red-700 mb-4 flex items-center gap-2">
+          <span class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center text-red-600">✕</span>
+          含まれないもの
+        </h3>
+        <div class="space-y-3">
+          <div class="bg-white rounded-lg p-4 shadow-sm flex items-start gap-3">
+            <span class="text-red-400 mt-0.5">✕</span>
+            <div><p class="font-bold text-sm">個別面談</p><p class="text-gray-500 text-xs">本プランには含まれません</p></div>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-sm flex items-start gap-3">
+            <span class="text-red-400 mt-0.5">✕</span>
+            <div><p class="font-bold text-sm">収益保証</p><p class="text-gray-500 text-xs">教育サービスのため保証なし</p></div>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-sm flex items-start gap-3">
+            <span class="text-red-400 mt-0.5">✕</span>
+            <div><p class="font-bold text-sm">案件保証</p><p class="text-gray-500 text-xs">条件に基づくご案内であり保証ではありません</p></div>
+          </div>
+          <div class="bg-white rounded-lg p-4 shadow-sm flex items-start gap-3">
+            <span class="text-red-400 mt-0.5">✕</span>
+            <div><p class="font-bold text-sm">ソフトの提供</p><p class="text-gray-500 text-xs">ご自身でご準備ください</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PRICING -->
+<!-- ============================================================ -->
+<section id="pricing" class="py-20 px-4 fade-in">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-indigo-600 font-bold text-sm mb-2">PRICING</p>
+      <h2 class="text-2xl md:text-3xl font-black">料金プラン</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <!-- Basic Plan -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-indigo-100 card-hover">
+        <div class="p-1" style="background: var(--primary);"></div>
+        <div class="p-8 text-center">
+          <span class="inline-block px-4 py-1 rounded-full text-xs font-bold text-white mb-4" style="background: var(--primary);">基本プラン（6ヶ月契約）</span>
+          <div class="mb-6">
+            <span class="text-5xl font-black" style="color: var(--primary);">150,000</span>
+            <span class="text-gray-500">円（税抜）</span>
+          </div>
+          <ul class="text-left text-sm space-y-3 mb-6">
+            <li class="flex items-center gap-2"><span class="text-green-500">✔</span>学習コンテンツ（動画講義）</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✔</span>課題提出・無制限添削</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✔</span>LINEチャット質問対応</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✔</span>コミュニティ参加</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✔</span>実践機会の案内</li>
+          </ul>
+          <a href="#cta" class="gradient-btn block text-white font-bold py-3 rounded-full">
+            無料相談する
+          </a>
+        </div>
+      </div>
+      <!-- Community Plan -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-purple-100 card-hover">
+        <div class="p-1" style="background: var(--secondary);"></div>
+        <div class="p-8 text-center">
+          <span class="inline-block px-4 py-1 rounded-full text-xs font-bold text-white mb-4" style="background: var(--secondary);">継続コミュニティプラン</span>
+          <p class="text-xs text-gray-400 mb-2">6ヶ月終了後・任意</p>
+          <div class="mb-6">
+            <span class="text-lg text-gray-500">月額</span>
+            <span class="text-5xl font-black" style="color: var(--secondary);">1,000</span>
+            <span class="text-gray-500">円（税抜）</span>
+          </div>
+          <ul class="text-left text-sm space-y-3 mb-6">
+            <li class="flex items-center gap-2"><span class="text-green-500">✔</span>コミュニティ参加・情報交換</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✔</span>最新ノウハウ共有</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✔</span>メンバー同士の交流</li>
+            <li class="flex items-center gap-2"><span class="text-green-500">✔</span>実践・募集情報の案内</li>
+          </ul>
+          <div class="bg-purple-50 rounded-lg p-3 text-xs text-purple-700">
+            卒業後も学びを続けたい方におすすめ
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- TIKTOK REVENUE -->
+<!-- ============================================================ -->
+<section class="py-20 px-4 section-alt fade-in">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-indigo-600 font-bold text-sm mb-2">REVENUE</p>
+      <h2 class="text-2xl md:text-3xl font-black">TikTok経由の販売報酬の仕組み</h2>
+      <p class="text-gray-500 mt-2">報酬は「保証」ではなく「条件付きの仕組み」です</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden mb-8">
+      <table class="w-full text-sm">
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50 w-1/4">対象</td>
+            <td class="px-6 py-4">受講者が編集・関与したTikTok経由で対象商材の販売が発生した場合</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">報酬率</td>
+            <td class="px-6 py-4 font-bold" style="color: var(--primary);">販売報酬の30%</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">締め日</td>
+            <td class="px-6 py-4">月末締め</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4 font-bold text-gray-600 bg-gray-50">支払日</td>
+            <td class="px-6 py-4">翌月20日</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-indigo-50 border-l-4 border-indigo-500 rounded-r-xl p-6">
+        <h3 class="font-bold text-indigo-800 mb-3">報酬発生の前提条件</h3>
+        <ul class="text-sm text-indigo-700 space-y-2">
+          <li>• TikTok経由での販売であること</li>
+          <li>• 対象商材に該当すること</li>
+          <li>• 所定条件を満たすこと</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 border-l-4 border-red-500 rounded-r-xl p-6">
+        <h3 class="font-bold text-red-800 mb-3">特に重要な注意事項</h3>
+        <ul class="text-sm text-red-700 space-y-2">
+          <li>• 報酬の発生は<strong>保証ではありません</strong></li>
+          <li>• 報酬額や発生頻度には個人差があります</li>
+          <li>• 「実質無料」「受講料を回収できる」は誤りです</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAYMENT FLOW -->
+<!-- ============================================================ -->
+<section class="py-20 px-4 fade-in">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-indigo-600 font-bold text-sm mb-2">PAYMENT</p>
+      <h2 class="text-2xl md:text-3xl font-black">お支払いの流れ</h2>
+      <p class="text-gray-500 mt-2">教材代金と報酬は独立した仕組みです</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden text-center">
+        <div class="py-3 text-white font-bold text-sm" style="background: var(--primary);">契約月</div>
+        <div class="p-4 text-sm">契約・受講開始<br />学習スタート</div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden text-center">
+        <div class="py-3 text-white font-bold text-sm" style="background: var(--secondary);">月末</div>
+        <div class="p-4 text-sm">報酬の締め日<br />教材代金の締め日</div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden text-center">
+        <div class="py-3 text-white font-bold text-sm" style="background: var(--accent);">翌月20日</div>
+        <div class="p-4 text-sm">報酬の支払い<br /><span class="text-xs text-gray-400">（条件を満たした場合）</span></div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden text-center">
+        <div class="py-3 text-white font-bold text-sm" style="background: var(--primary-light);">翌月27日</div>
+        <div class="p-4 text-sm">教材代金の<br />お支払い</div>
+      </div>
+    </div>
+    <div class="bg-yellow-50 border-l-4 border-yellow-500 rounded-r-xl p-6">
+      <h3 class="font-bold text-yellow-800 mb-2">誤解を避けるために</h3>
+      <ul class="text-sm text-yellow-700 space-y-1">
+        <li>• 報酬と教材代金は<strong>別の仕組み</strong>です。報酬が発生しなくても教材代金のお支払いは必要です。</li>
+        <li>• 報酬の発生には販売実績等の条件があり、保証されません。</li>
+        <li>• 教材代金の後払い方式は挑戦しやすさを考慮した設計です。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- ENVIRONMENT -->
+<!-- ============================================================ -->
+<section class="py-20 px-4 section-alt fade-in">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-indigo-600 font-bold text-sm mb-2">ENVIRONMENT</p>
+      <h2 class="text-2xl md:text-3xl font-black">受講に必要な環境</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <h3 class="font-bold text-lg mb-4" style="color: var(--primary);">推奨PCスペック</h3>
+        <div class="space-y-3 text-sm">
+          <div class="flex justify-between border-b border-gray-100 pb-2"><span class="font-bold text-gray-500">OS</span><span>Windows 10以降 / macOS 12以降</span></div>
+          <div class="flex justify-between border-b border-gray-100 pb-2"><span class="font-bold text-gray-500">メモリ</span><span>8GB以上（16GB推奨）</span></div>
+          <div class="flex justify-between border-b border-gray-100 pb-2"><span class="font-bold text-gray-500">ストレージ</span><span>SSD 256GB以上</span></div>
+          <div class="flex justify-between border-b border-gray-100 pb-2"><span class="font-bold text-gray-500">CPU</span><span>Core i5相当以上 / Apple M1以上</span></div>
+          <div class="flex justify-between"><span class="font-bold text-gray-500">ネット環境</span><span>安定したブロードバンド</span></div>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <h3 class="font-bold text-lg mb-4" style="color: var(--secondary);">必要なツール</h3>
+        <div class="space-y-3 text-sm">
+          <div class="flex gap-3"><span class="text-purple-500 mt-0.5">▶</span><div><strong>動画編集ソフト：</strong>CapCut（無料）を想定</div></div>
+          <div class="flex gap-3"><span class="text-purple-500 mt-0.5">▶</span><div><strong>AIツール：</strong>講座内でご案内</div></div>
+          <div class="flex gap-3"><span class="text-purple-500 mt-0.5">▶</span><div><strong>LINEアプリ：</strong>質問・コミュニティに使用</div></div>
+          <div class="flex gap-3"><span class="text-purple-500 mt-0.5">▶</span><div><strong>TikTokアプリ：</strong>動画投稿・実践に使用</div></div>
+          <div class="flex gap-3"><span class="text-purple-500 mt-0.5">▶</span><div><strong>スマートフォン：</strong>TikTok投稿・確認に併用</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 bg-cyan-50 border-l-4 border-cyan-500 rounded-r-xl p-6 text-sm">
+      <strong class="text-cyan-800">はじめての方へ：</strong>
+      <span class="text-cyan-700">講座開始時に環境準備のガイダンスをお届けします。基本的にはパソコン1台とインターネット環境があれば始められます。</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- TRUST -->
+<!-- ============================================================ -->
+<section class="py-20 px-4 fade-in">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-indigo-600 font-bold text-sm mb-2">TRUST</p>
+      <h2 class="text-2xl md:text-3xl font-black">安心してご利用いただくために</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-xl shadow-md p-6 border-l-4 card-hover" style="border-left-color: var(--primary);">
+        <h3 class="font-bold mb-2" style="color: var(--primary);">サービスの透明性</h3>
+        <p class="text-gray-500 text-sm">提供内容・料金・契約条件をすべて開示。誇大な表現は行いません。</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-6 border-l-4 card-hover" style="border-left-color: var(--secondary);">
+        <h3 class="font-bold mb-2" style="color: var(--secondary);">無制限の添削サポート</h3>
+        <p class="text-gray-500 text-sm">回数制限なしの添削で「やりっぱなし」にならない学習環境を提供します。</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-6 border-l-4 card-hover" style="border-left-color: var(--accent);">
+        <h3 class="font-bold mb-2" style="color: var(--accent);">段階的な学習設計</h3>
+        <p class="text-gray-500 text-sm">未経験者でも取り組めるよう、基礎・応用・実践の3フェーズで設計しています。</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-6 border-l-4 card-hover" style="border-left-color: var(--primary-light);">
+        <h3 class="font-bold mb-2" style="color: var(--primary-light);">誠実な報酬説明</h3>
+        <p class="text-gray-500 text-sm">報酬は条件付きの仕組み。「必ず稼げる」「実質無料」等の表現は一切しません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CAUTIONS -->
+<!-- ============================================================ -->
+<section class="py-20 px-4 section-alt fade-in">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-red-600 font-bold text-sm mb-2">CAUTION</p>
+      <h2 class="text-2xl md:text-3xl font-black">ご契約前にご確認ください</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="font-bold text-yellow-700 mb-3">契約・お支払い</h3>
+        <ul class="text-sm space-y-2 text-gray-600">
+          <li>• 契約期間は6ヶ月間です</li>
+          <li>• 教材代金は報酬の有無にかかわらず必要です</li>
+          <li>• 返金規定はありません</li>
+        </ul>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-6">
+        <h3 class="font-bold text-red-700 mb-3">成果・報酬</h3>
+        <ul class="text-sm space-y-2 text-gray-600">
+          <li>• スキル習得や成果には個人差があります</li>
+          <li>• 報酬は条件付きであり保証ではありません</li>
+          <li>• 「必ず稼げる」「回収できる」ではありません</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bg-red-50 border border-red-200 rounded-xl p-6 mb-6">
+      <h3 class="font-bold text-red-700 mb-3">こんな方にはおすすめしません</h3>
+      <ul class="text-sm text-red-600 space-y-2">
+        <li>• 「受講すればすぐに稼げる」と期待される方</li>
+        <li>• 学習や課題に取り組む時間を確保できない方</li>
+        <li>• パソコン・インターネット環境をお持ちでない方</li>
+        <li>• 収益保証のあるサービスをお探しの方</li>
+      </ul>
+    </div>
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg p-4 text-sm text-yellow-800">
+      <strong>返金規定なしについて：</strong>デジタルコンテンツの性質上、受講開始後の返金には対応しておりません。ご不明点はお申し込み前にお問い合わせください。
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FAQ -->
+<!-- ============================================================ -->
+<section id="faq" class="py-20 px-4 fade-in">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="text-indigo-600 font-bold text-sm mb-2">FAQ</p>
+      <h2 class="text-2xl md:text-3xl font-black">よくあるご質問</h2>
+    </div>
+    <div class="space-y-3">
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+          <span class="font-bold text-sm"><span class="text-indigo-600 mr-2">Q1.</span>動画編集の経験がなくても大丈夫？</span>
+          <span class="faq-icon text-gray-400 transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-answer px-6 pb-0">
+          <p class="text-sm text-gray-600 pb-4">はい。未経験者を対象に設計しています。AIツールの基本操作から段階的に学べるカリキュラムです。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+          <span class="font-bold text-sm"><span class="text-indigo-600 mr-2">Q2.</span>1日どのくらい学習が必要？</span>
+          <span class="faq-icon text-gray-400 transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-answer px-6 pb-0">
+          <p class="text-sm text-gray-600 pb-4">目安は1日30分〜1時間程度です。ご自身のペースで進められます。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+          <span class="font-bold text-sm"><span class="text-indigo-600 mr-2">Q3.</span>報酬は必ずもらえる？</span>
+          <span class="faq-icon text-gray-400 transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-answer px-6 pb-0">
+          <p class="text-sm text-gray-600 pb-4">いいえ。所定の条件を満たした場合にのみ発生します。金額・頻度は保証されません。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+          <span class="font-bold text-sm"><span class="text-indigo-600 mr-2">Q4.</span>6ヶ月後は自動更新される？</span>
+          <span class="faq-icon text-gray-400 transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-answer px-6 pb-0">
+          <p class="text-sm text-gray-600 pb-4">基本プランは6ヶ月で終了します。継続コミュニティプランへの参加は任意です。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+          <span class="font-bold text-sm"><span class="text-indigo-600 mr-2">Q5.</span>スマホだけで受講できる？</span>
+          <span class="faq-icon text-gray-400 transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-answer px-6 pb-0">
+          <p class="text-sm text-gray-600 pb-4">動画編集にはPCが必要です。TikTokへの投稿・確認にはスマートフォンも併用します。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+          <span class="font-bold text-sm"><span class="text-indigo-600 mr-2">Q6.</span>途中で解約できる？</span>
+          <span class="faq-icon text-gray-400 transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-answer px-6 pb-0">
+          <p class="text-sm text-gray-600 pb-4">途中解約の条件については、お申し込み前にお問い合わせください。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+          <span class="font-bold text-sm"><span class="text-indigo-600 mr-2">Q7.</span>返金はできる？</span>
+          <span class="faq-icon text-gray-400 transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-answer px-6 pb-0">
+          <p class="text-sm text-gray-600 pb-4">デジタルコンテンツの性質上、返金規定はございません。</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition">
+          <span class="font-bold text-sm"><span class="text-indigo-600 mr-2">Q8.</span>編集ソフトに費用はかかる？</span>
+          <span class="faq-icon text-gray-400 transition-transform duration-300">▼</span>
+        </button>
+        <div class="faq-answer px-6 pb-0">
+          <p class="text-sm text-gray-600 pb-4">基本ツール（CapCut等）は無料想定です。一部AIツールは有料の場合があります。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CTA -->
+<!-- ============================================================ -->
+<section id="cta" class="py-20 px-4 hero-bg fade-in">
+  <div class="max-w-3xl mx-auto text-center">
+    <div class="accent-line mx-auto mb-6"></div>
+    <h2 class="text-2xl md:text-3xl font-black text-white mb-4">
+      まずは無料相談から始めましょう
+    </h2>
+    <p class="text-gray-300 mb-8 leading-relaxed">
+      サービス内容やカリキュラムについて、お気軽にご質問ください。<br />
+      無理な勧誘は一切いたしません。
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+      <a href="mailto:info@licogroup.jp" class="gradient-btn text-white font-bold px-10 py-4 rounded-full text-lg inline-block">
+        メールで無料相談
+      </a>
+    </div>
+    <p class="text-gray-400 text-sm">
+      info@licogroup.jp ／ 066-131-8773
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER -->
+<!-- ============================================================ -->
+<footer class="bg-gray-900 text-gray-400 py-12 px-4">
+  <div class="max-w-5xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-8 mb-8">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-xl font-black text-white">LICO</span>
+          <span class="text-sm text-gray-500">ショート動画塾</span>
+        </div>
+        <p class="text-sm">運営：Albaly Co., Ltd.</p>
+        <p class="text-sm">代表：木本 彰宏</p>
+        <p class="text-sm">所在地：東京都新宿区西新宿3丁目3番13号西新宿水間ビル2F</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-3">お問い合わせ</h4>
+        <p class="text-sm">メール：info@licogroup.jp</p>
+        <p class="text-sm">電話：066-131-8773</p>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-3">リンク</h4>
+        <a href="agreement.html" class="text-sm hover:text-white transition block mb-1">特定商取引法に基づく表記</a>
+        <a href="#" class="text-sm hover:text-white transition block">トップに戻る</a>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 pt-6 text-center text-xs">
+      <p>&copy; 2025 Albaly Co., Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================ -->
+<!-- SCRIPTS -->
+<!-- ============================================================ -->
+<script>
+// FAQ Accordion
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const icon = btn.querySelector('.faq-icon');
+  const isOpen = answer.classList.contains('open');
+
+  // Close all
+  document.querySelectorAll('.faq-answer').forEach(a => {
+    a.classList.remove('open');
+    a.style.paddingBottom = '0';
+  });
+  document.querySelectorAll('.faq-icon').forEach(i => {
+    i.style.transform = 'rotate(0deg)';
+  });
+
+  // Toggle current
+  if (!isOpen) {
+    answer.classList.add('open');
+    answer.style.paddingBottom = '0';
+    icon.style.transform = 'rotate(180deg)';
+  }
+}
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+
+</body>
+</html>
